@@ -1,0 +1,25 @@
+/* AdminsPage.css */
+
+.admins-paper {
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .admins-paper {
+    animation: fadeIn 1s ease-in-out;
+  }
+  

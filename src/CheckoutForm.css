@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    background-color: hsl(187, 54%, 51%);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .checkout-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+  }
+  
+  .checkout-box {
+    background-color: hsl(159, 56%, 72%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+  }
+  
+  .checkout-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #00796b;
+  }
+  
+  .checkout-input .MuiInputBase-root {
+    background-color: #e0f2f1;
+    border-radius: 5px;
+  }
+  
+  .checkout-input .MuiInputLabel-root {
+    color: #004d40;
+  }
+  
+  .checkout-input .MuiInputBase-input {
+    padding: 12px 14px;
+  }
+  
+  .checkout-input .MuiOutlinedInput-root {
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: #00796b;
+    }
+  }
+  
+  .checkout-input .MuiOutlinedInput-adornedStart {
+    padding-left: 20px; /* Adjust padding to prevent merging */
+  }
+  
+  .checkout-button {
+    margin-top: 20px;
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    padding: 12px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+  }
+  
+  .checkout-button:disabled {
+    background-color: #b0c4de;
+  }
+  
+  .amount-details {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .amount-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .amount-subtext {
+    font-size: 0.9rem;
+    color: #004d40;
+  }
+  
+  /* Dialog Styles */
+  .MuiDialog-paper {
+    border-radius: 10px;
+  }
+  
+  .MuiDialogTitle-root {
+    background-color: #00796b;
+    color: white;
+  }
+  
+  .MuiDialogContent-root {
+    background-color: #e0f7fa;
+  }
+  
+  .MuiDialogActions-root {
+    background-color: #e0f2f1;
+  }
+  
+  .MuiButton-root {
+    color: #00796b;
+    font-weight: bold;
+  }
+  
+  .MuiButton-root:hover {
+    background-color: #e0f2f1;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .checkout-box {
+      padding: 15px;
+    }
+  
+    .checkout-title {
+      font-size: 1.25rem;
+    }
+  
+    .checkout-button {
+      font-size: 0.875rem;
+    }
+  }
+  

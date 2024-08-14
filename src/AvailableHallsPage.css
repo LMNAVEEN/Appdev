@@ -1,0 +1,20 @@
+/* src/AvailableHallsPage.css */
+
+.page-title {
+    margin: 2rem 0;
+  }
+  
+  .hall-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hall-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .hall-card .MuiButton-root {
+    margin-top: 1rem;
+  }
+  

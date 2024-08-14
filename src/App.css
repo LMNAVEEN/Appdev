@@ -1,0 +1,110 @@
+/* src/App.css */
+
+/* Default light mode colors */
+:root {
+  --background-color-light: #ffffff; /* White background */
+  --background-color-dark: hwb(0 0% 100%); /* Black background */
+  --navbar-footer-color-light: hwb(0 0% 100%); /* Black navbar and footer */
+  --navbar-footer-color-dark: hsl(331, 100%, 50%); /* Pink navbar and footer */
+  --text-color-light: #000000; /* Black text */
+  --text-color-dark: #ffffff; /* White text */
+  --input-bg-color-light: #ffffff; /* White input background */
+  --input-bg-color-dark: #ffffff; /* Black input background */
+  --input-text-color-light: #000000; /* Black input text */
+  --input-text-color-dark: #ffffff; /* White input text */
+  --input-border-color-light: hsl(276, 100%, 51%); /* Light grey border */
+  --input-border-color-dark: #ffffff; /* White border */
+}
+
+/* Light mode styles */
+[data-theme='light'] {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+[data-theme='light'] .navbar,
+[data-theme='light'] .footer {
+  background-color: var(--navbar-footer-color-light);
+}
+
+[data-theme='light'] .input,
+[data-theme='light'] .MuiInputBase-root {
+  background-color: var(--input-bg-color-light);
+  color: var(--input-text-color-light);
+  border: 1px solid var(--input-border-color-light);
+}
+
+/* Dark mode styles */
+[data-theme='dark'] {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+[data-theme='dark'] .navbar,
+[data-theme='dark'] .footer {
+  background-color: var(--navbar-footer-color-dark);
+}
+
+[data-theme='dark'] .input,
+[data-theme='dark'] .MuiInputBase-root {
+  background-color: var(--input-bg-color-dark);
+  color: var(--input-text-color-dark);
+  border: 1px solid var(--input-border-color-dark);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-footer-color-light);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: var(--navbar-footer-color-dark);
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(135deg, hwb(0 0% 100%), hsl(0, 0%, 0%));
+  color: white;
+  padding: 20px 0;
+  transition: background-color 0.3s ease; /* Ensure smooth background transition */
+}
+
+[data-theme='dark'] .footer {
+  background: #ff69b4; /* Pink background for dark mode */
+  color: #ffffff; /* White text color */
+}
+
+.footer .footer-text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Testimonials and Features */
+.testimonials,
+.features {
+  color: var(--section-text-color-light);
+}
+
+[data-theme='dark'] .testimonials,
+[data-theme='dark'] .features {
+  color: var(--section-text-color-dark);
+}
+
+/* Form Elements */
+input,
+textarea,
+select,
+.MuiInputBase-root {
+  background-color: var(--input-bg-color-light);
+  color: var(--input-text-color-light);
+  border: 1px solid var(--input-border-color-light);
+}
+
+[data-theme='dark'] input,
+[data-theme='dark'] textarea,
+[data-theme='dark'] select,
+[data-theme='dark'] .MuiInputBase-root {
+  background-color: var(--input-bg-color-dark);
+  color: var(--input-text-color-dark);
+  border: 1px solid var(--input-border-color-dark);
+}

@@ -1,0 +1,19 @@
+/* src/Footer.css */
+.footer {
+    background: linear-gradient(135deg, hwb(0 0% 100%), hsl(0, 0%, 0%));
+    color: white;
+    padding: 20px 0;
+    transition: background-color 0.3s ease; /* Ensure smooth background transition */
+  }
+  
+  .footer .footer-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Dark Mode */
+  .footer.dark-mode {
+    background: #ff69b4; /* Pink background for dark mode */
+    color: #ffffff; /* White text color */
+  }
+  

@@ -1,0 +1,98 @@
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensures video is behind content */
+  filter: brightness(50%); /* Darken the video for better contrast with the form */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Ensure form is above the video */
+  width: 100%;
+  height: 100%; /* Ensure the container takes the full viewport height */
+}
+
+.login-paper {
+  padding: 30px;
+  border-radius: 20px; /* More rounded for a modern look */
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Enhanced shadow for 3D effect */
+  background: linear-gradient(145deg, #ffffff, #f0f4f8); /* Light gradient background */
+  backdrop-filter: blur(15px); /* Increased blur effect for frosted glass look */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border to enhance 3D look */
+}
+
+.login-title {
+  font-family: 'Roboto', sans-serif;
+  color: #1e90ff; /* Bright blue color for the title */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center;
+  font-weight: 700; /* Bold title */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Shadow for added depth */
+}
+
+.login-subtitle {
+  color: #4682b4; /* Slightly lighter blue for the subtitle */
+  margin-bottom: 20px; /* Space below the subtitle */
+  text-align: center;
+}
+
+.login-error {
+  margin-top: 1rem;
+  text-align: center;
+  color: #ff6347; /* Tomato red for error messages */
+  font-weight: 500;
+}
+
+.login-input {
+  margin-bottom: 16px;
+}
+
+.login-button {
+  margin-top: 16px;
+  border-radius: 25px; /* More rounded for a modern look */
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient background */
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for 3D effect */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Inverted gradient on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.login-link {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.login-link-text {
+  color: #1e90ff; /* Bright blue color for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.login-link-text:hover {
+  color: #4682b4; /* Slightly lighter blue on hover */
+  text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+/* src/AdminManagement.css */
+
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .register-section {
+    margin-bottom: 30px;
+  }
+  
+  .textField {
+    margin-bottom: 15px;
+  }
+  
+  .addButton {
+    background-color: #3f51b5;
+    color: white;
+    &:hover {
+      background-color: #303f9f;
+    }
+  }
+  
+  .existingAdmins {
+    margin-top: 30px;
+  }
+  
+  .adminListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .deleteButton {
+    color: #f44336;
+    &:hover {
+      background-color: rgba(244, 67, 54, 0.1);
+    }
+  }
+  
+  .listItemText {
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,12 @@
+/* src/Navbar.css */
+.navbar {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.navbar.dark-mode {
+  background-color: pink; /* Pink background for dark mode */
+  color: white; /* White text color */
+}
